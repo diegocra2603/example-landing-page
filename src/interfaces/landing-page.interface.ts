@@ -5,8 +5,8 @@ export interface LandingPage {
     code: string;
     destination: number;
     banners: Banner[];
-    images: any[];
-    texts: any[];
+    images: Image[];
+    texts: Text[];
 }
 
 export interface Banner {
@@ -25,4 +25,10 @@ export interface Image {
     description: string;
     order: number;
     goToUrl: string;
+}
+
+export interface Text {
+    id: string;
+    title: string;
+    description: string;
 }
